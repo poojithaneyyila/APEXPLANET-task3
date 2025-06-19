@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Task 3 - Joke Generator</title>
+  <link rel="stylesheet" href="joke.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>😂 Fun Joke Zone</h1>
+    <div class="clock" id="clock">Time: --:--:--</div>
+
+    <!-- Joke Topic Selector -->
+    <div class="topic-selector">
+      <label for="topic">Choose a topic:</label>
+      <select id="topic">
+        <option value="Any">Random</option>
+        <option value="Programming">Programming</option>
+        <option value="Misc">General</option>
+        <option value="Pun">Pun</option>
+      </select>
+    </div>
+
+    <!-- Joke Generator -->
+    <div class="joke-box">
+      <h2>Random Joke Generator</h2>
+      <p id="joke">Select a topic and click the button!</p>
+      <button onclick="getJoke()">Get Joke</button>
+    </div>
+  </div>
+
+  <script src="joke.js"></script>
+</body>
+</html>

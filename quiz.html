@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Quiz App</title>
+  <link rel="stylesheet" href="quiz.css" />
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>Smart Quiz App</h1>
+
+    <div class="theme-toggle">
+      <label>
+        <input type="checkbox" id="themeSwitch" />
+        Dark Mode
+      </label>
+    </div>
+
+    <div class="topic-select">
+      <label>Select Topic:</label>
+      <select id="topic">
+        <option value="science">Science</option>
+        <option value="movies">Movies</option>
+        <option value="nature">Nature</option>
+      </select>
+      <button onclick="startQuiz()">Start Quiz</button>
+    </div>
+
+    <div class="quiz-box" id="quizBox" style="display: none;">
+      <div class="quiz-header">
+        <h2 id="questionText">Question Text</h2>
+        <p id="timer">Time: 10</p>
+      </div>
+      <ul id="answerList"></ul>
+      <button onclick="nextQuestion()">Next</button>
+    </div>
+
+    <div class="result" id="resultBox" style="display: none;">
+      <h2>Quiz Completed!</h2>
+      <p id="scoreDisplay"></p>
+      <button onclick="location.reload()">Try Another Topic</button>
+    </div>
+  </div>
+
+  <script src="quiz.js"></script>
+</body>
+</html>

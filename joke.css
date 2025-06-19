@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #e0f7fa, #b2ebf2);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.container {
+  max-width: 700px;
+  width: 100%;
+  background: #fff;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+h1 {
+  color: #006064;
+  margin-bottom: 20px;
+}
+
+.clock {
+  font-size: 1.2rem;
+  color: #00796b;
+  margin-bottom: 20px;
+}
+
+.topic-selector {
+  margin-bottom: 20px;
+}
+
+.topic-selector label {
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.topic-selector select {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #aaa;
+  font-size: 1rem;
+}
+
+.joke-box {
+  background: #f1f8e9;
+  padding: 20px;
+  border-radius: 16px;
+  margin-top: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.joke-box h2 {
+  color: #33691e;
+  margin-bottom: 15px;
+}
+
+.joke-box p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.joke-box button {
+  padding: 10px 18px;
+  background: #388e3c;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.joke-box button:hover {
+  background: #1b5e20;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  .joke-box p {
+    font-size: 1rem;
+  }
+
+  .clock {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .joke-box h2 {
+    font-size: 1.2rem;
+  }
+
+  .joke-box p {
+    font-size: 0.9rem;
+  }
+
+  .joke-box button {
+    width: 100%;
+  }
+}
