@@ -20,7 +20,7 @@ A fun and engaging quiz application featuring:
 
 ### 🤣 3. Fun Joke Zone
 An advanced joke generator that includes:
-- Different joke topics (Tech, Pun, Programming)
+- Different joke topics (random, Pun, Programming)
 - Real-time clock display ⏰
 - API integration for random jokes
 - Theme switcher (Light/Dark)
