@@ -4,7 +4,7 @@ This task includes *three interactive, responsive, and styled frontend projects*
 
 ## 🚀 Project Highlights
 
-### 🔮 1. Magic Slider
+### 🔮 1. Magic Slider(media queries)
 A smooth and stylish image carousel with:
 - Seamless transitions
 - Auto and manual slide control
